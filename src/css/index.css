@@ -1,0 +1,423 @@
+/*General Styles*/
+
+* {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    max-width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body{
+    margin: 0;
+}
+
+html {
+    background-color: rgba(0, 99, 21, 0.7);
+}
+
+.green {
+    color: rgb(130, 255, 50);
+}
+
+/*Header section*/
+
+header {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/gabin-vallet-J154nEkpzlQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+header h1 {
+    font-size: 12rem;
+    margin: 0 0 2rem 10%;
+    line-height: 0.8;
+    max-width: fit-content;
+}
+
+header h3 {
+    font-size: 3rem;
+    margin: 0 0 0 10%;
+    line-height: 1;
+}
+
+
+header ul {
+    display: inline;
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+    list-style: none;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    background-color: rgba(240, 248, 255, 0.521);
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.2s, border-radius 0.4s;
+}
+
+header a:hover {
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+}
+
+.dropdownicon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(250, 235, 215, 0.50);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dropdownicon span {
+    color: rgb(60, 60, 60);
+}
+
+.dropdown_close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    border-radius: 1rem;
+    background-color: rgba(250, 235, 215, 0.50);
+    width: 3.5rem;
+    height: 3.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.dropdown_close span {
+    color: rgb(60, 60, 60);
+}
+
+@media only screen and (max-width: 1000px) {
+    header h1 {
+        text-align: center;
+        line-height: 1;
+        margin: 1.5rem auto;
+        font-size: 4rem;
+    }
+
+    header h3 {
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    #dropdownMenu{
+        display: none;
+        position: absolute;
+        left: 15px;
+        top: 90px;
+        text-align: left;
+    }
+
+    header ul {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdownicon {
+        display: flex;
+        transition: transform 0.5s;
+    }
+
+    .dropdown_close {
+        display: none;
+        transition: transform 0.5s;
+    }
+
+}
+
+/*Main Section*/
+
+main {
+    font-size: 1.5rem;
+    display: grid;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        font-size: 1rem;
+    }
+}
+
+/*Introduction*/
+
+.introduction {
+    display: grid;
+    width: 100%;
+    height: max-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.introduction .text {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    padding: 1rem;
+    max-width: 80%;
+}
+
+.introduction img {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    max-height: 100%;
+    background-image: url(../img/mask-01.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 1000px){
+    .introduction img{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 1;
+        width: 100%;
+    }
+    .introduction .text{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        font-size: 1.2rem;
+    }
+
+    .introduction h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+/*About Me*/
+
+.aboutme {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.aboutme .text {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    padding: 1rem;
+}
+
+.aboutme img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    max-height: 100%;
+    background-image: url(../img/mask-2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 1000px) {
+    .aboutme img{
+        grid-column: 1 /span 3;
+        grid-row: 1 / span 1;
+    }    
+
+    .aboutme .text{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+
+/*Gallery*/
+
+.gallery {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 1000px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img{
+        width: 100%;
+    }
+}
+
+/*Projects*/
+
+.projects {
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+    justify-items: center;
+}
+
+.projects h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.project {
+    display: grid;
+    width: 90%;
+    margin: 4px auto;
+    border: 2px solid black;
+    background-color: rgb(70, 40, 15);
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.projects a {
+    max-width: fit-content;
+    text-decoration: none;
+    cursor: default;
+}
+
+.project figcaption {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.project:hover{
+    cursor: pointer;
+    background-color: rgba(70, 40, 15, 0.7);
+}
+
+/*Konzept*/
+
+.konzept h1{
+    font-size: 6rem;
+    text-align: center;
+}
+
+.konzept figure {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.konzept figure figcaption {
+    grid-column: 2 / span 2;
+    padding: 2rem;
+}
+
+.konzept figure img {
+    grid-column: 1 / span 1;
+    width: auto;
+    max-height: 90%;
+    background-image: url(../img/mask-2.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .konzept h1{
+        font-size: 2.2rem;
+    }
+
+    .konzept figure img{
+        grid-column: 1 /span 3;
+        grid-row: 1 / span 1;
+    }    
+
+    .konzept figure figcaption{
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 1;
+        font-size: 1.2rem;
+    }
+}
+
+/*Kontakt*/
+
+.contact h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact h1{
+        font-size: 2.2rem;
+    }
+}
+
+/*Footer*/
+
+footer {
+    margin-top: 5rem;
+    background-color: rgb(34, 34, 34);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 3rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.521);
+}
