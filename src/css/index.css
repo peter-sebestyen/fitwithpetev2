@@ -396,6 +396,7 @@ main {
 
 .contact p {
     text-align: center;
+    padding: 0.5rem
 }
 
 @media only screen and (max-width: 1000px) {
@@ -407,7 +408,7 @@ main {
 /*Footer*/
 
 footer {
-    margin-top: 5rem;
+    margin-top: 0rem;
     background-color: rgb(34, 34, 34);
 }
 
