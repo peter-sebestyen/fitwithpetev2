@@ -15,7 +15,7 @@ body{
 }
 
 html {
-    background-color: rgba(0, 99, 21, 0.7);
+    background-color: rgb(60, 150, 80);
 }
 
 .green {
@@ -279,8 +279,9 @@ main {
 }
 
 .gallery img {
-    width: 100%;
+    width: 90%;
     max-height: 100%;
+    border-radius: 30%;
 }
 
 @media only screen and (max-width: 1000px){
