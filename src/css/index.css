@@ -80,44 +80,6 @@ header a:hover {
     border-radius: 0.5rem;
 }
 
-.dropdownicon {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 3rem;
-    border-radius: 1rem;
-    background-color: rgba(250, 235, 215, 0.50);
-    width: 3.5rem;
-    height: 3.5rem;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.dropdownicon span {
-    color: rgb(60, 60, 60);
-}
-
-.dropdown_close {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 3rem;
-    border-radius: 1rem;
-    background-color: rgba(250, 235, 215, 0.50);
-    width: 3.5rem;
-    height: 3.5rem;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transform: rotate(90deg);
-}
-
-.dropdown_close span {
-    color: rgb(60, 60, 60);
-}
 
 @media only screen and (max-width: 1000px) {
     header h1 {
@@ -130,32 +92,6 @@ header a:hover {
     header h3 {
         margin: auto;
         font-size: 2rem;
-    }
-
-    #dropdownMenu{
-        display: none;
-        position: absolute;
-        left: 15px;
-        top: 90px;
-        text-align: left;
-    }
-
-    header ul {
-        width: 100%;
-        margin: auto;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .dropdownicon {
-        display: flex;
-        transition: transform 0.5s;
-    }
-
-    .dropdown_close {
-        display: none;
-        transition: transform 0.5s;
     }
 
 }
@@ -222,9 +158,9 @@ main {
     }
 }
 
-/*About Me*/
+/*Erfolgsgeschichte*/
 
-.aboutme {
+.story {
     display: grid;
     width: 100%;
     height: fit-content;
@@ -234,13 +170,13 @@ main {
     justify-items: center;
 }
 
-.aboutme .text {
+.story .text {
     grid-column: 2 / span 2;
     grid-row: 1 / span 3;
     padding: 1rem;
 }
 
-.aboutme img {
+.story img {
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     width: 70%;
@@ -252,12 +188,12 @@ main {
 }
 
 @media only screen and (max-width: 1000px) {
-    .aboutme img{
+    .story img{
         grid-column: 1 /span 3;
         grid-row: 1 / span 1;
     }    
 
-    .aboutme .text{
+    .story .text{
         grid-column: 1 / span 3;
         grid-row: 2 / span 2;
         font-size: 1.2rem;
@@ -294,53 +230,8 @@ main {
     }
 }
 
-/*Projects*/
-
-.projects {
-    display: block;
-    margin: 3rem auto;
-    width: 100%;
-    justify-items: center;
-}
-
-.projects h1 {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.project {
-    display: grid;
-    width: 90%;
-    margin: 4px auto;
-    border: 2px solid black;
-    background-color: rgb(70, 40, 15);
-    grid-template-columns: 1fr 4fr;
-    align-items: center;
-}
-
-.projects a {
-    max-width: fit-content;
-    text-decoration: none;
-    cursor: default;
-}
-
-.project figcaption {
-    margin-left: 1rem;
-    text-decoration: none;
-}
-
-.project:hover{
-    cursor: pointer;
-    background-color: rgba(70, 40, 15, 0.7);
-}
 
 /*Konzept*/
-
-/*.konzept {
-    background-image: url("../img/HALlogo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 
 .konzept h1{
     font-size: 6rem;
