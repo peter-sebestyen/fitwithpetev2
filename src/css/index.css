@@ -264,6 +264,10 @@ main {
     background-position: bottom;
 }
 
+.konzept h2 {
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 1000px) {
 
     .konzept h1{
@@ -271,9 +275,6 @@ main {
         margin: 3rem auto;
     }
 
-    .konzept h2 {
-        margin-top: 0;
-    }
 
     .konzept figure img{
         grid-column: 1 /span 3;
